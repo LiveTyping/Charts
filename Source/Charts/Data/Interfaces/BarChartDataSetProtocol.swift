@@ -18,7 +18,10 @@ public protocol BarChartDataSetProtocol: BarLineScatterCandleBubbleChartDataSetP
     // MARK: - Data functions and accessors
     
     // MARK: - Styling functions and accessors
-    
+
+    /// corners to be rounded
+      var roundedCorners: UIRectCorner { get set }
+
     /// `true` if this DataSet is stacked (stacksize > 1) or not.
     var isStacked: Bool { get }
     

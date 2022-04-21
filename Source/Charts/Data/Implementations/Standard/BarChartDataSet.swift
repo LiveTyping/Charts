@@ -37,6 +37,9 @@ open class BarChartDataSet: BarLineScatterCandleBubbleChartDataSet, BarChartData
 
     // MARK: - Data functions and accessors
     
+    /// corners to be rounded
+    open var roundedCorners: UIRectCorner = []
+    
     /// the maximum number of bars that are stacked upon each other, this value
     /// is calculated from the Entries that are added to the DataSet
     private var _stackSize = 1
